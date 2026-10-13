@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EKJeong — Apps</title>
+<meta name="description" content="Mobile apps by EKJeong.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --accent: #FC836D;
+    --ink: #1C1B1A;
+    --text-secondary: #6B655C;
+    --hairline: #E4DED5;
+    --bg: #FFFDFB;
+    --card: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #F2EFEA;
+      --text-secondary: #B9B2A7;
+      --hairline: #3A3733;
+      --bg: #17150F;
+      --card: #1F1D18;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 16px 40px;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 4px; }
+  .lede { color: var(--text-secondary); margin: 0 0 40px; }
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    margin: 0 0 12px;
+  }
+  .app {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  .app img {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+  .app h3 { margin: 0 0 4px; font-size: 1.1rem; }
+  .app p { margin: 0 0 12px; color: var(--text-secondary); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hairline);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>EKJeong</h1>
+  <p class="lede">Independent developer of simple, offline-first mobile apps.</p>
+
+  <h2>Apps</h2>
+
+  <div class="app">
+    <img src="apps/cinematic-slideshow/icon.png" alt="Cinematic Slideshow icon">
+    <div>
+      <h3>Cinematic Slideshow</h3>
+      <p>Turn any photo folder into a cinematic Ken Burns slideshow with music.</p>
+      <div class="links">
+        <a href="https://play.google.com/store/apps/details?id=com.ekjeong.cinematicslideshow">Google Play</a>
+        <a href="/cinematic-slideshow/privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Contact: <a href="mailto:euikuk.jeong@gmail.com">euikuk.jeong@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
